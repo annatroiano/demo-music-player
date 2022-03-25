@@ -13,7 +13,13 @@ It shows a music player with pre-uploaded songs. It is possible to play, pause, 
 
 Then, the **playlist** in the `/js/app.js` file needs to be updated. Songs are stored in the **array** called `playlist`. 
 
-![](https://github.com/annatroiano/demo-music-player/blob/main/js-playlist-screenshot.jpg)
+```javascript
+const playlist = [
+  { title: "funk-it", artist: "ComaStudio" },
+  { title: "fashion-guitar-beat", artist: "Coma-Media" },
+  { title: "the-train", artist: "Caffeine Creek Band" },
+];
+```
 
 As shown in the array, title names corresponds to the mp3 file names, while artist names are written normally. The app is built in such a way that, when songs are displayed in the music player, dashes in the title names are converted into spaces and each word is capitalized.
 
