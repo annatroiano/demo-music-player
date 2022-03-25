@@ -4,7 +4,7 @@
 
 This simple **music player** is part of a project to pratice coding with HTML, CSS and JavaScript.
 
-It shows a music player with pre-uploaded songs. It is possible to play, pause, skip previous or next song, tap the progress bar to skip to a specific minute/second, and increase or decrease the volume. 
+It shows a music player with pre-uploaded songs. It is possible to play, pause, skip to previous or next song, tap the progress bar to skip to a specific minute/second, and increase or decrease the volume. 
 
 
 ## Project Notes
