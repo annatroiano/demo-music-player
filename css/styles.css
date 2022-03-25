@@ -1,0 +1,157 @@
+:root {
+  --primary: #ec216c;
+  --variant: #e93a7a;
+  --text: #202020;
+  --hover: #606060;
+  --light-gray: #e3e3e3;
+  --background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #fc5c7d, #6a82fb);
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+body,
+.music-player,
+.song-info,
+.progress-info-container,
+.player-buttons,
+.volume-container,
+.volume-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-player,
+.song-info,
+.volume-buttons {
+  flex-direction: column;
+}
+
+.music-player {
+  background-color: var(--background);
+  height: 90vh;
+  max-height: 500px;
+  width: 85vw;
+  max-width: 450px;
+  border-radius: 2%;
+}
+
+.song-info {
+  height: 40%;
+  width: 100%;
+  gap: 5%;
+  color: var(--text);
+  justify-content: flex-end;
+}
+
+.player-buttons,
+.volume-container {
+  height: 30%;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.7em;
+}
+
+.artist {
+  margin-bottom: 5%;
+}
+.artist,
+.current-time,
+.duration {
+  font-size: 1.1em;
+}
+
+.progress-info-container {
+  width: 90%;
+}
+
+.progress-bar-container {
+  height: 8px;
+  width: 70%;
+  background-color: var(--light-gray);
+  margin: 0 3%;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--primary);
+}
+
+.progress-bar:hover {
+  background-color: var(--variant);
+}
+
+.duration {
+  width: 34px;
+  overflow-x: hidden;
+}
+
+button {
+  background-color: var(--background);
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--hover);
+}
+
+.previous span,
+.next span {
+  font-size: 3.5em;
+}
+
+.play-icon,
+.pause-icon {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 5em;
+  margin: 0 20px;
+}
+
+.active:hover {
+  color: var(--variant);
+}
+
+.volume-container {
+  width: 80%;
+  gap: 5%;
+  font-size: clamp(16px, 4.5vh, 22px);
+  border-top: 2px solid var(--light-gray);
+}
+
+.volume-number {
+  padding: 5px 0;
+  margin-top: 15%;
+  border: 2px solid var(--light-gray);
+}
+
+.volume-button span {
+  font-size: clamp(20px, 10vh, 3.5em);
+}
