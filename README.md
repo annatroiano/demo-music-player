@@ -23,7 +23,7 @@ const playlist = [
 
 As shown in the array, title names corresponds to the mp3 file names, while artist names are written normally. The app is built in such a way that, when songs are displayed in the music player, dashes in the title names are converted into spaces and each word is capitalized.
 
-When the app is launched, the **playback volume** is 0. Its value can be increased or decreased in a range between 0 (mute) and 10 (loudest).
+When the app is launched, the **volume** is at 0. Its value can be increased or decreased in a range between 0 (mute) and 10 (loudest).
 
 ## Known Bugs
 
