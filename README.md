@@ -4,7 +4,7 @@
 
 This simple **music player** is part of a project to pratice coding with HTML, CSS and JavaScript.
 
-It shows a music player with pre-uploaded songs. It is possible to play, pause, skip to previous or next song, tap the progress bar to skip to a specific minute/second, and increase or decrease the volume. 
+It shows a music player with pre-uploaded songs. It is possible to play, pause, skip to previous or next song, tap the progress bar to skip to a specific minute/second, and turn up or down the volume. 
 
 
 ## Project Notes
@@ -23,7 +23,7 @@ const playlist = [
 
 As shown in the array, title names corresponds to the mp3 file names, while artist names are written normally. The app is built in such a way that, when songs are displayed in the music player, dashes in the title names are converted into spaces and each word is capitalized.
 
-When the app is launched, the **volume** is at 0. Its value can be increased or decreased in a range between 0 (mute) and 10 (loudest).
+When the app is launched, the **volume** is at 0. Its value can be turned up or down in a range between 0 (mute) and 10 (loudest).
 
 ## Known Bugs
 
