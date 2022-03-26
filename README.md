@@ -9,7 +9,7 @@ It shows a music player with pre-uploaded songs. It is possible to play, pause, 
 
 ## Project Notes
 
-**Mp3 audio files** are stored in the `/tracks` folder by their title names with dashes and lowercase words. It is possible to add new songs into the folder using the same naming convention.
+**Mp3 audio files** are stored in the `/tracks` folder by their title names with dashes and lowercase letters. It is possible to add new songs into the folder using the same naming convention.
 
 Then, the **playlist** in the `/js/app.js` file needs to be updated. Songs are stored in the **array** called `playlist`. 
 
@@ -21,7 +21,7 @@ const playlist = [
 ];
 ```
 
-As shown in the array, title names corresponds to the mp3 file names, while artist names are written normally. The app is built in such a way that, when songs are displayed in the music player, dashes in the title names are converted into spaces and each word is capitalized.
+As shown in the array, title names corresponds to the mp3 file names, while artist names are written normally. The app is built in such a way that, when songs are displayed in the music player, dashes in the title names are converted into spaces and the first letter of each word is capitalized.
 
 When the app is launched, the **volume** is at 0. Its value can be turned up or down in a range between 0 (mute) and 10 (loudest).
 
