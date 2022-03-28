@@ -5,14 +5,20 @@ const currentTimeNum = document.querySelector(".current-time");
 const durationNum = document.querySelector(".duration");
 const progressBarContainer = document.querySelector(".progress-bar-container");
 const progressBar = document.querySelector(".progress-bar");
+const playerButtons = document.querySelector(".player-buttons");
 const previous = document.querySelector(".previous");
 const playPauseBtn = document.querySelector(".play-pause-button");
 const playIcon = document.querySelector(".play-icon");
 const pauseIcon = document.querySelector(".pause-icon");
 const next = document.querySelector(".next");
+
+playerButtons.insertAdjacentHTML("afterend", `<div class="volume-container"><div><p>Volume</p><p class="volume-number"></p></div><div class="volume-buttons"><button class="volume-button volume-up"><span class="material-icons"> add_circle </span></button><button class="volume-button volume-down"><span class="material-icons"> remove_circle </span></button></div></div>`);
 const volumeNumber = document.querySelector(".volume-number");
 const volumeUp = document.querySelector(".volume-up");
 const volumeDown = document.querySelector(".volume-down");
+let volumeValue = 0;
+audio.volume = 0;
+volumeNumber.textContent = "0";
 
 const playlist = [
   { title: "funk-it", artist: "ComaStudio" },
@@ -21,8 +27,6 @@ const playlist = [
 ];
 
 let track = 0;
-audio.volume = 0;
-let volumeValue = 0;
 
 function displayName(info) {
   let name;
