@@ -83,6 +83,7 @@ body,
 
 .progress-info-container {
   width: 90%;
+  cursor: pointer;
 }
 
 .progress-bar-container {
